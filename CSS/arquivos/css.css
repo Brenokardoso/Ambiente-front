@@ -1,0 +1,51 @@
+.textos{
+    color: darkblue;
+    background-color: green;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#borda_1{
+    background-color: aquamarine;
+    border: 1px solid purple;
+    /* background-image:url("../../HTML/img/sunny.png"); */
+    /* background-size: 400px; */
+    /* background-repeat:space; */
+    /* background-position: center; */
+
+}
+#borda_borda{
+    border-color: green blue red purple;
+    border-width: 2px;
+    border-style: dotted groove solid outset;
+    background-color: beige;
+}
+body{
+    /* background-color: burlywood;
+    background-image:url("../../HTML/img/sunny.png");
+    background-size: 400px;
+    background-repeat:space;
+    background-position:initial; */
+    background-color: whitesmoke;
+}
+.final{
+    background-color: burlywood;
+    background-image:url("../../HTML/img/sunny.png");
+    background-size: 400px;
+    background-repeat:space;
+    background-position:initial;
+}
+#bordas_msm{
+    border: 1px solid black;
+    margin: 10px
+}
+#titulo1{
+    border: 3px solid orange;
+    padding: 2%;
+}
+#botao{
+    border: 3px solid red;
+    margin: 5%;
+    padding: 5%;
+    color: white;
+    background-color: black;
+    border-radius: 5%;
+}
