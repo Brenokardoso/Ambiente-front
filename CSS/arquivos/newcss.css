@@ -1,0 +1,18 @@
+.bordas{
+    border: 5px solid darkblue;
+    border-radius: 5px;
+    width: 300px;
+    margin: 100px;
+}
+
+.entradas{
+    background-color: darkgray;
+    margin: 15px;
+    padding: 3px;
+}
+.entradas:hover{
+    background-color: red;
+}
+.entradas:focus{
+    background-color: blueviolet;
+}
