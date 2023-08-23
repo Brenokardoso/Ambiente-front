@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <header>
+        <section>
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="#">ABAP-TO</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white">Contatos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false" style="color: white;">
+                      Saiba mais 
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Sobre nós</a>
+                      <a class="dropdown-item" href="#">Seja membro</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">SAC</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" hidden="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar..." aria-label="Search">
+                  <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Pesquisar</button>
+                </form>
+              </div>
+            </nav> 
+
+        </section>
+    </header>
+    <br>
+    <main>
+        <script>
+            // declaração de varaiveis,Js não é tipado:
+            var nome = "Breno Kardoso";
+            console.log(nome);
+
+            // alert("esse é um exemplo de mensagem para o usuário"):
+            var aula = 5**3;
+            console.log(aula);
+            var tipos = "1" + 1;
+            console.log(tipos)
+            var bolenaos1 = (nome == "Breno Kardoso") && (aula ==125);
+            var bolenaos2 = (nome == "lucas") || (aula ==125);
+
+            // operadores logicos and e or:
+            console.log(bolenaos1);
+            console.log(bolenaos2);
+
+            // Estruturas de decisão:
+            if(nome == "breno Kardoso"){
+                console.log("teste");
+            }
+            else
+            if(aula == 126){
+                alert("olha a aula");
+            }
+            else{
+                console.log("OK");
+            }
+
+            // Convertendo dados de uma estrutura:
+            var conversaoInt = ("2");
+            var conversaoFloat = ("2.0");
+            parseInt(conversaoInt);
+            conversaoFloat = parseFloat(conversaoFloat);
+            console.log(conversaoInt);
+            console.log(conversaoFloat);
+            var num = 10;
+            num = num.toString();
+            console.log(typeof(num));
+
+            // Operador Ternário:
+            var ternario = typeof(conversaoFloat) == "number" ? console.log("verdadeiro") : console.log("falso");
+
+            // switch case,eles seguem a "gravidade" logo um break é esperado para dar fim ao switch case:
+            var apresentador = "rodrigo faro";
+
+            switch(apresentador){
+                case "rodrigo faro":
+                    console.log("O melhor do brasil");
+                    break;
+                case "ratinho":
+                    console.log("rapaiz");
+                    break;
+                case "faustao":
+                    console.log("Oloko meu");
+                    break;
+                default:
+                    console.log("nada");
+            }
+
+            // Estrutura de repetição While:
+            var enquanto = null
+
+            while(enquanto < 5){
+                enquanto++;
+                console.log(enquanto);
+                if(enquanto == 3){
+                    console.log("Passamos da metade");
+                }
+            }
+
+            // Estrutura de repetição Do While:
+            console.log("Laço de repetição com o 'DO' ");
+            faca = 0;
+            do{
+                console.log(faca);
+                faca++;
+            }
+            while(faca != 5){
+               
+            }
+
+            // Estrtura de repetição for 
+            console.log("Estrutura for")
+            for(var para = 0; para < 10 ; para = para + 2){
+                console.log(para)
+            }
+
+            // Arreys ou (listas/tuplas)
+            console.log("Arreys")
+            var lista_nomes = Array()  //A declaração tambem pode ser feita por  
+
+            lista_nomes[0] = "Breno";
+            lista_nomes[1] = "Lucas";
+            lista_nomes[2] = "Higor";
+            lista_nomes['position'] = "DUCK";  //No Js os arreys tambem funcionam como objetos logo você pode adcionar atributos a eles,nese caso uma propriedade
+            console.log(lista_nomes)
+
+            console.log(lista_nomes.length)
+
+            for(var nome = 0; nome <= lista_nomes.length;nome++){
+                console.log(lista_nomes[nome]);
+                if(nome == 3){
+                    console.log(lista_nomes['position']);
+                }
+            }
+
+            // Métodos de Arreys
+            console.log("Métodos de Arreys");
+            lista_famosos = ["Michael Jackson"]
+            lista_famosos.push("Fredy Mercury");  // Adicionando valores a um arrey
+            lista_famosos.push("Dj André Marques");
+            lista_famosos.push("Breno Cardoso,the legend")
+            lista_famosos.push("Nome a ser retirado pelo método pop")  
+            lista_famosos.pop() // retira o ultimo dado do arrey
+            console.log(lista_famosos.indexOf("Breno Cardoso,the legend")) //Funciona como o o método find do python,retorna a posição dentro do Arrey
+            console.log(lista_famosos)
+            lista_famosos = lista_famosos.sort()  //Método sort() de ordenção de arreys por ordem alfabetica
+            console.log(lista_famosos)
+
+
+            // Funções e callBacks/
+            console.log("Funções");
+            function soma_numeros(n1,n2,callBackSucess,callBacksFail){
+                if(true){
+                    callBackSucess();
+                }
+                else{
+                    callBacksFail();
+                }
+                return console.log("Essa função funcionou perfeitamente!")
+                
+            }
+            
+            function callBackSucess(){
+                console.log("A função foi um sucesso");  // ele usa uma função como parametro para outra e dentro de uma ele define o retorno positivo
+            }   
+            function callBacksFail(){   
+                console.log("A função foi uma falha")    // ele usa uma função como parametro para outra e dentro de uma ele define o retorno negativo
+            }
+
+            soma_numeros(10,20,callBackSucess,callBacksFail)
+
+
+        </script>
+    </main>
+
+  
+  </body>
+</html>
